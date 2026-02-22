@@ -1,0 +1,18 @@
+<!DOCTYPE html>                                                                                                                                                                                                                                                                                                 
+<html>                                                                                              
+<head>                                                                                                                                                                                                                                                                                                          
+    <meta charset="utf-8">                                                                                                                                                                                                                                                                                      
+    <title>Join Household</title>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        if (code) {
+            window.location.href = 'shoppinggen://join/' + code;
+        }
+    </script>
+</head>
+<body>
+    <p>Opening Shopping Generator...</p>
+    <p>If nothing happened, open the app and enter the invite code manually.</p>
+</body>
+</html>
